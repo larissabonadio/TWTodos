@@ -41,12 +41,15 @@ O arquivo de projeto utiliza o SDK web do .NET 10 e as dependências do Entity F
 ### Principais componentes
 
 **Models/Todo.cs**
+
 Representa a entidade de tarefa. O modelo possui propriedades como `Id`, `Title`, `CreatedAt`, `Deadline` e `FinishedAt`. Também contém validações e o método `Finish()`, responsável por registrar a data de conclusão da tarefa.
 
 **Contexts/TWTodosContext.cs**
+
 É o contexto do Entity Framework Core responsável pelo acesso aos dados. O projeto utiliza um banco SQLite chamado `todos.sqlite3`.
 
 **Controllers/TodoController.cs**
+
 Controla as operações da aplicação, incluindo:
 - Listagem;
 - Cadastro;
@@ -55,6 +58,7 @@ Controla as operações da aplicação, incluindo:
 - Conclusão de tarefas.
 
 **Views/**
+
 Contém as interfaces Razor utilizadas para apresentar e manipular as tarefas.
 
 ## Validações
